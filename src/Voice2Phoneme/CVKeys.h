@@ -1,4 +1,4 @@
-// Keys to the Consonant-Vowel voicebank format of UTAU, an older standard primarily relevant to simple Japanese synth
+// Keys to the Consonant-Vowel voicebank format of UTAU, an older standard that results in a more robotic sound
 
 enum CVKey{
   A,   //あ
@@ -8,23 +8,24 @@ enum CVKey{
   BO,  //ぼ
   BU,  //ぶ
   BYA, //びゃ
+  BYE, //びぇ
   BYO, //びぉ
-  BYU, //びぅ
+  BYU, //びゅ
   CHA, //ちゃ
   CHE, //ちぇ
   CHI, //ち
   CHO, //ちぉ
-  CHU, //ちぅ
+  CHU, //ちゅ
   DA,  //だ
   DE,  //で
   DI,  //ぢ
   DO,  //ど
-  DU,  //づ...?
+  DU,  //どぅ
   E,   //え
-  FA,  //ふゃ...?
-  FE,  //ふぇ...?
-  FI,  //ふぃ...?
-  FO,  //ふぉ...?
+  FA,  //ふぁ
+  FE,  //ふぇ
+  FI,  //ふぃ
+  FO,  //ふぉ
   FU,  //ふ
   GA,  //が
   GE,  //げ
@@ -32,38 +33,41 @@ enum CVKey{
   GO,  //ご
   GU,  //ぐ
   GYA, //ぎゃ
+  GYE, //ぎぇ
   GYO, //ぎぉ
-  GYU, //ぎぅ
+  GYU, //ぎゅ
   HA,  //は
   HE,  //へ
   HI,  //ひ
   HO,  //ほ
-  //HU,  //ふ
+  //HU,  //ふ //TODO DNE in JP, include for EN?
   HYA, //ひゃ
   HYO, //ひぉ
-  HYU, //ひぅ
+  HYU, //ひゅ
   I,   //い
   JA,  //ざ
   JE,  //ぜ
   JI,  //じ
   JO,  //ぞ
-  JU,  //ず...?
+  JU,  //ずゅ
   KA,  //か
   KE,  //け
   KI,  //き
   KO,  //こ
   KU,  //く
   KYA, //きゃ
+  KYE, //きぇ
   KYO, //きぉ
-  KYU, //きぅ
+  KYU, //きゅ
   MA,  //ま
   ME,  //め
   MI,  //み
   MO,  //も
   MU,  //む
   MYA, //みゃ
+  MYE, //みぇ
   MYO, //みぉ
-  MYU, //みぅ
+  MYU, //みゅ
   N,   //ん
   NA,  //な
   NE,  //ね
@@ -71,8 +75,9 @@ enum CVKey{
   NO,  //の
   NU,  //ぬ
   NYA, //にゃ
+  NYE, //にぇ
   NYO, //にぉ
-  NYU, //にぅ
+  NYU, //にゅ
   O,   //お
   PA,  //ぱ
   PE,  //ぺ
@@ -80,50 +85,53 @@ enum CVKey{
   PO,  //ぽ
   PU,  //ぷ
   PYA, //ぴゃ
+  PYE, //ぴぇ
   PYO, //ぴぉ
-  PYU, //ぴぅ
+  PYU, //ぴゅ
   RA,  //ら
   RE,  //れ
   RI,  //り
   RO,  //ろ
   RU,  //る
   RYA, //りゃ
+  RYE, //りぇ
   RYO, //りぉ
-  RYU, //りぅ
+  RYU, //りゅ
   SA,  //さ
   SE,  //せ
-  SI,
+  SI,  //すぃ
   SO,  //そ
   SU,  //す
   SHA, //しゃ
   SHE, //しぇ
   SHI, //し
   SHO, //しぉ
-  SHU, //しぅ
+  SHU, //しゅ
   TA,  //た
   TE,  //て
-  TI,  //...ち?
+  TI,  //てぃ
   TO,  //と
   TU,  //とぅ
   TSU, //つ
   U,   //う
   WA,  //わ
-  WE,  //ゑ...?
-  WI,  //ゐ
+  WE,  //うぇ (ゑ)
+  WI,  //うぃ (ゐ)
   WO,  //を
-  //WU,  //ゔ...?
+  //WU,  //をぅ (ゔ) //TODO DNE in modern JP, include for EN?
   YA,  //や
-  YE,  //やぇ...?
-  //YI,
+  YE,  //いぇ
+  //YI, //い  //TODO DNE in JP, include for EN?
   YO,  //よ
   YU,  //ゆ
   ZA,  //ざ
   ZE,  //ぜ
-  ZI,  //じ...?
+  ZI,  //ずぃ
   ZO,  //ぞ
   ZU   //ず
 }
 
+//TODO priority-sorted arrays of fallback keys necessary?
 //TODO mapping out vowel and/or consonant grouping necessary? May need a proper trie and not just arrays. All sounds like future optimization!
 /*
 using CV_VowelGroup = std::pair<CVKey, std::array<CVKey>>;
