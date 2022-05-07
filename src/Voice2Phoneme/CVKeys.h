@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 // Keys to the Consonant-Vowel voicebank format of UTAU, an older standard that results in a more robotic sound
 
 enum CVKey{
@@ -40,7 +42,7 @@ enum CVKey{
   HE,  //へ
   HI,  //ひ
   HO,  //ほ
-  //HU,  //ふ //TODO DNE in JP, include for EN?
+  HU,  //ふ duplicate of FU
   HYA, //ひゃ
   HYO, //ひぉ
   HYU, //ひゅ
@@ -118,10 +120,10 @@ enum CVKey{
   WE,  //うぇ (ゑ)
   WI,  //うぃ (ゐ)
   WO,  //を
-  //WU,  //をぅ (ゔ) //TODO DNE in modern JP, include for EN?
+  WU,  //をぅ (ゔ) DNE in modern JP
   YA,  //や
   YE,  //いぇ
-  //YI, //い  //TODO DNE in JP, include for EN?
+  YI,  //い  DNE in JP
   YO,  //よ
   YU,  //ゆ
   ZA,  //ざ
