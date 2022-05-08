@@ -20,7 +20,7 @@ enum CVKey{
   CHU, //ちゅ
   DA,  //だ
   DE,  //で
-  DI,  //ぢ
+  DI,  //どぃ
   DO,  //ど
   DU,  //どぅ
   E,   //え
@@ -49,7 +49,7 @@ enum CVKey{
   I,   //い
   JA,  //ざ
   JE,  //ぜ
-  JI,  //じ
+  JI,  //ぢ
   JO,  //ぞ
   JU,  //ずゅ
   KA,  //か
