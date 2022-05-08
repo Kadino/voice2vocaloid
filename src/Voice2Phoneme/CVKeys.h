@@ -128,7 +128,7 @@ enum CVKey{
   YU,  //ゆ
   ZA,  //ざ
   ZE,  //ぜ
-  ZI,  //ずぃ
+  ZI,  //じ
   ZO,  //ぞ
   ZU   //ず
 }
