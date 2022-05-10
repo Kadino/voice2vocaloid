@@ -133,6 +133,8 @@ enum CVKey{
   ZU   //ず
 }
 
+//TODO need markers for OFF or Start/Stop? Sustain?
+
 //TODO priority-sorted arrays of fallback keys necessary?
 //TODO mapping out vowel and/or consonant grouping necessary? May need a proper trie and not just arrays. All sounds like future optimization!
 /*
